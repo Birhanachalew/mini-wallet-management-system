@@ -10,12 +10,12 @@ const mockActivities = [
   { type: 'cash-in', message: 'Cash in: 500 ETB', time: '1 hr ago' },
 ];
 
-export default function HistoryPage() {
+export default function EnhancedHistoryPage() {
   const agentId = 'demo-agent'; // Replace with real agentId from auth state
   const [filter, setFilter] = useState({ search: '', type: 'all' });
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6 md:p-12">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 p-6 md:p-12">
       <h1 className="text-3xl font-extrabold mb-8 text-blue-800 drop-shadow">Transaction History</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="col-span-1">
